@@ -1,0 +1,112 @@
+﻿/**********************************************************************/
+/* Définition du style du DIV d'identifiant "menu_haut" */
+#menu_haut_catalogue{
+	height: 40px;
+	/*width: 1020px;*/
+	font-weight: bolder;
+	color: darkblue;
+	text-align: center;
+}
+
+/* Spécialisation du style des éléments HTML du DIV d'identifiant "menu_haut" */
+#menu_haut_catalogue  a,
+#menu_haut_catalogue  a:visited,
+#menu_haut_catalogue  a:hover {
+	color: black;
+	text-decoration: none;
+	border: solid 1px darkblue;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.2em;
+	margin: 0.2em;
+	background-color: lightgrey;
+}
+#menu_haut_catalogue  a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: darkgrey;
+}
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "contenu" */
+#contenu_catalogue{
+	/*height: 100%;
+	width: 1020px;
+	background-color: aquamarine;*/
+}
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "menu_gauche" */
+#menu_gauche_catalogue 
+{
+	text-align: center;
+	float:center;
+	width: 100px;
+	text-indent: 0%;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.2em;
+	margin: 0.2em;
+	background-color: lightgrey;
+	box-shadow: 0px 0px 50px lightgrey;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	}
+#menu_gauche_catalogue a
+{
+	color: black;
+}
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Contenu" */
+#texte_catalogue{
+	width:100%;
+	/*height: 400px;*/
+	float:right;
+	/*padding:20px;*/
+	text-indent: 30px; /* Les paragraphes commencent 30 pixels sur la droite */
+	text-align: justify; /* Ils sont justifiés */
+	font-family: "Comic Sans MS", Georgia, "Times New Roman", serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: black;
+	border-right: dotted 1px lightgrey; 
+	border-left: dotted 1px lightgrey;
+}
+
+
+
+
+ 
+/**********************************************************************/
+/* styles pour le tableau de resultat    */
+#affiche_resultat caption{
+	caption-side:up; 
+	font-weight:bold; 
+	text-decoration:underline;
+	color: black;
+}
+
+#affiche_resultat {
+	border:1px dotted black;
+}
+ 
+#affiche_resultat td{
+	border:1px dotted black; 
+	background-color:silver;
+	text-align:center;
+	color: black;
+}
+
+#affiche_resultat .commentaire {
+	border:1px solid orange; 
+	background-color:white;
+	width:400px;
+	text-align:center;
+	color: black;
+}
+#affiche_resultat .photo {
+	border-style:none; 
+	background-color:white;
+	width:300px;
+}  

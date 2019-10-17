@@ -1,0 +1,259 @@
+body
+{
+	background-color: #f2f2f7;
+	margin: 0px;
+}
+
+/* D�finition du style commun � tous les fonds de DIV de classe css "fondDiv" */
+div.fondDiv 
+{
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/* D�finition du style commun � tous les contenus de DIV de classe css "contenuDiv" */
+div.contenuDiv 
+{
+	z-index: 1;
+	position: relative;
+	height: 100%;
+}
+
+
+/**********************************************************************/
+/* D�finition du style du DIV d'identifiant "Bandeau" */
+div#Bandeau
+{
+	z-index: 3;
+	position: relative;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	/*height: 40px;*/
+	width: 100%;
+	height: 100%;
+	background-color: #ccd3e0;
+}
+
+/* Sp�cialisation du style du DIV de classe "contenuDiv" qui se trouve dans le DIV d'identifiant "Bandeau" */
+#Bandeau div.contenuDiv
+{
+	text-align: center;
+	font-size: 200%;
+	text-transform: uppercase;
+	transform: translateY(-20%);
+}
+
+
+/**********************************************************************/
+/* D�finition du style du DIV d'identifiant "Centre" */
+div#Centre
+{
+	clear: both;
+	z-index: 2;
+	float: center;
+	/*position: relative;*/
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+
+/**********************************************************************/
+/* D�finition du style du DIV d'identifiant "Menu" */
+div#Menu
+{
+	background-color: black ;
+	opacity: 0.8;
+	text-align: center;
+	width: 100%;
+	height: 35px;
+    box-shadow: 0px 0px 50px #89b4f9;
+    transform: translateY(-78%);
+}
+#Menu div.contenuDiv
+{
+	font-size: 1.7em;
+    color: white;
+}
+
+.mail
+{
+	color: blue;
+}
+
+a:visited
+{
+	color: black;
+}
+
+/**********************************************************************/
+/* D�finition du style du DIV d'identifiant "Contenu" */
+div#Contenu
+{
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+	float:center;
+	
+	text-indent: 30px; /* Les paragraphes commencent 30 pixels sur la droite */
+	text-align: justify; /* Ils sont justifi�s */
+	font-family: "Times New Roman","Comic Sans MS", Georgia, serif;
+	
+	background-color: rgba(255, 255, 255, 0.9);
+	font-size: 20px;
+	padding: 20px;
+	background-color: #f2f2f7;
+	box-shadow: 0px 0px 10px #eaeaf2;
+
+}
+
+/* Sp�cialisation du style du DIV de classe "contenuDiv" qui se trouve dans le DIV d'identifiant "Contenu" */
+
+
+
+/**********************************************************************/
+/* D�finition du style du DIV d'identifiant "pied_page" */
+div#Pied_page
+{
+	clear: both;
+	
+}
+#Pied_page div.contenuDiv 
+{
+	text-align: center;	
+}
+.mail
+{
+	color: black;
+	text-align: center;
+}
+.maillien:hover
+{
+	color: red;
+}
+.maillien
+{
+	color: black;
+}
+.lien,
+.lien:visited
+{
+	color: #00d0ff;
+}
+.lien:hover
+{
+	color: white;
+}
+.lienvisible:hover
+{
+	text-decoration: underline;
+}
+/*désigne les liens qui doivent être reconnus directement*/
+.titre
+{
+	color: black;
+}
+.titreimg
+{
+	height: 200px;
+}
+.lienvisible:visited
+{
+	color: blue;
+}
+li
+{
+	font-size: 22px;
+	text-decoration: underline;
+}
+#navigation {
+  margin: 0 ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+#navigation li {
+  display: inline ;
+  margin-right: 1px ;
+  color: #fff ;
+  background: #c00 ;
+}
+#navigation li a {
+  padding: 4px 20px ;
+  background: #5d5e60;
+  color: #fff ;
+  border: 1px solid #600 ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+#navigation  a:hover,
+#navigation  a:focus, 
+#navigation  a:active
+{
+  background: #3c3c3d ;
+  text-decoration: underline ;
+}
+.page1
+{
+	color: #164349;
+	text-align: left;
+}
+/*puces de la page 1*/
+.page2
+{
+	border-top: 1px solid black;
+}
+/*ajoute une bordure sur la page 1 et 2*/
+.ligne1
+{
+	text-align: center;
+	opacity: 0.5;
+	font-style: italic;
+}
+/*chapô*/
+.puce2
+{
+	text-decoration: none;
+	color: #634343;
+	text-align: center;
+	padding-top: 3%
+}
+/*définit les puces secondaires de la page 2*/
+.imggauche
+{
+	float: left;
+	margin-top: 2%;
+/*définit l'image de gauche de la page 2*/
+}
+.imgdroite
+{
+	float: right;
+	margin-top: 2%;
+/*définit l'image de droite de la page 2*/
+}
+.txtimg
+{
+	text-align: center;
+}
+/*définit le texte entre les deux images de la page 2*/
+.test
+{
+	height: 200px;
+	width: 200px;
+}
+/*toutes les images*/
+.page3
+{
+	color: #465875;
+}
+/*définit les puces principales de la page 2*/
+
+.contact
+{
+	text-align: center;
+}

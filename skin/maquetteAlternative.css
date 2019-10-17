@@ -1,0 +1,153 @@
+body{
+	background: url('fond.jpg') fixed;
+}
+
+/* Définition du style commun à tous les fonds de DIV de classe css "fondDiv" */
+div.fondDiv {
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/* Définition du style commun à tous les contenus de DIV de classe css "contenuDiv" */
+div.contenuDiv {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+}
+
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Bandeau" */
+#Bandeau{
+	z-index: 3;
+	position: relative;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 40px;
+	width: 1020px;
+	border: solid 3px red; 
+}
+
+/* Spécialisation du style du DIV de classe "fondDiv" qui se trouve dans le DIV d'identifiant "Bandeau" */
+#Bandeau div.fondDiv {
+	background: blue;
+}
+
+/* Spécialisation du style du DIV de classe "contenuDiv" qui se trouve dans le DIV d'identifiant "Bandeau" */
+#Bandeau div.contenuDiv {
+	text-align: center;
+	font-size: 200%;
+	text-transform: uppercase;
+}
+
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Centre" */
+#Centre{
+	clear: both;
+	z-index: 2;
+	/*position: relative;*/
+	margin-left:auto;
+	margin-right:auto;
+	height:600px;
+	width: 1020px;
+}
+
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Menu" */
+#Menu{
+	position: relative;
+	float:left;
+	width: 180px;
+	min-height: 400px;
+	border: solid 3px blue; 
+	-moz-border-radius: 20px 5px / 20px 5px; /* bordure arrondie pour firefox */
+	-webkit-border-radius: 20px 5px / 20px 5px; /* idem pour IE et autres nav */
+	border-radius: 20px 5px / 20px 5px; /* propriété css3 pour bordures arrondies (encore mal prise en compte) */
+}
+
+/* Spécialisation du style du DIV de classe "fondDiv" qui se trouve dans le DIV d'identifiant "Menu" */
+#Menu div.fondDiv {
+	background-color: yellow;
+	opacity: 0.25; /* gestion de l'opacité sous FF */
+	filter: alpha(opacity=25); /* gestion de l'opacité sous IE */
+}
+
+/* Spécialisation du style des éléments HTML du DIV de classe "contenuDiv" qui se trouve dans le DIV d'identifiant "Menu" */
+#Menu div.contenuDiv {
+	font-weight: bolder;
+	color: darkblue;
+	text-align: center;
+}
+#Menu div.contenuDiv h2{
+	text-align: center;
+}
+#Menu div.contenuDiv a,
+#Menu div.contenuDiv a:visited,
+#Menu div.contenuDiv a:hover {
+	color: darkred;
+	text-decoration: none;
+}
+#Menu div.contenuDiv a:hover {
+	color: yellow;
+	background-color: darkred;
+	text-decoration: underline;
+	font-size: large;
+}
+#Menu div.contenuDiv ul{
+  	list-style: none;
+}
+
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Contenu" */
+#Contenu{
+	position: relative;
+	width:800px;
+	float:right;
+	height:100%;
+	text-indent: 30px; /* Les paragraphes commencent 30 pixels sur la droite */
+	text-align: justify; /* Ils sont justifiés */
+	font-family: "Comic Sans MS", Georgia, "Times New Roman", serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+}
+
+/* Spécialisations du style du DIV de classe "fondDiv" qui se trouve dans le DIV d'identifiant "Contenu" */
+#Contenu div.fondDiv {
+	background-color: #F73;
+	opacity: 0.50; /* gestion de l'opacité sous FF */
+	filter: alpha(opacity=50); /* gestion de l'opacité sous IE */
+}
+
+/* Spécialisation du style du DIV de classe "contenuDiv" qui se trouve dans le DIV d'identifiant "Contenu" */
+#Contenu div.contenuDiv {
+	/*min-height: 400px;*/
+	height: 90%;
+	padding:20px;
+	overflow:auto;
+}
+
+/**********************************************************************/
+/* Définition du style du DIV d'identifiant "Pied_page" */
+#Pied_page{
+	clear: both;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 40px;
+	width: 1020px;
+	border: solid 3px red;	position:relative; 
+}
+#Pied_page div.fondDiv {
+	background: blue;
+}
+#Pied_page div.contenuDiv {
+	text-align: center;
+}
